@@ -1,0 +1,23 @@
+@import "bootstrap";
+
+.modal {
+  display: block;
+}
+
+.modal-backdrop {
+  background-color: rgba(0,0,0,0.5);
+}
+
+
+table.table {
+  margin-top: 20px;
+
+  tr.active {
+    &, & td {
+      background-color: $brand-primary;
+      &, & a {
+        color: white;
+      }
+    }
+  }
+}
