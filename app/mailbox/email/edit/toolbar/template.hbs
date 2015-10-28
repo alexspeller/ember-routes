@@ -18,8 +18,10 @@
       <p>Some Social BS</p>
     </div>
     <div class="col-md-2 text-center">
-      <p><span class="glyphicon glyphicon-picture"></span></p>
-      <p>Gifs</p>
+      {{#link-to 'mailbox.email.edit.attach' class='btn btn-default'}}
+        <p><span class="glyphicon glyphicon-picture"></span></p>
+        <p>Gifs</p>
+      {{/link-to}}
     </div>
     <div class="col-md-2 text-center">
       <p><span class="glyphicon glyphicon-random"></span></p>

@@ -8,7 +8,9 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('mailbox', {path: "/:mailbox_id"}, function() {
     this.route('email', {path: "/emails/:email_id"}, function() {
-      this.route('edit')
+      this.route('edit', function() {
+        this.route('attach');
+      })
     });
   });
 });
