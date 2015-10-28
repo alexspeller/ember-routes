@@ -1,0 +1,18 @@
+<table class='table'>
+  <thead>
+    <th>Subject</th>
+    <th>From</th>
+    <th>To</th>
+  </thead>
+  <tbody>
+    {{#each model as |email|}}
+      {{#active-link tagName='tr'}}
+        <td>
+          {{link-to email.subject 'email' email.id}}
+        </td>
+        <td>{{email.from}}</td>
+        <td>{{email.to}}</td>
+      {{/active-link}}
+    {{/each}}
+  </tbody>
+</table>

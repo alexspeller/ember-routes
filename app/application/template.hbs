@@ -1,0 +1,21 @@
+<div class="container">
+  <h1>
+    {{link-to "TomsterMail" "index"}}
+  </h1>
+
+
+  <ul class="nav nav-pills">
+    {{#active-link}}
+      {{link-to 'Inbox' 'mailbox' 'inbox'}}
+    {{/active-link}}
+    {{#active-link}}
+      {{link-to 'Sent' 'mailbox' 'sent'}}
+    {{/active-link}}
+    {{#active-link}}
+      {{link-to 'Drafts' 'mailbox' 'drafts'}}
+    {{/active-link}}
+  </ul>
+
+  {{outlet}}
+</div>
+
