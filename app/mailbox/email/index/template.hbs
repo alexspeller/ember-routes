@@ -1,0 +1,7 @@
+<p>{{model.body}}</p>
+
+{{#if model.isDraft}}
+  <p class="text-right">
+    {{link-to "Edit" 'mailbox.email.edit' class='btn btn-primary btn-lg'}}
+  </p>
+{{/if}}
