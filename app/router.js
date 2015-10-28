@@ -6,13 +6,19 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('mailbox', {path: "/:mailbox_id"}, function() {
-    this.route('email', {path: "/emails/:email_id"}, function() {
-      this.route('edit', function() {
-        this.route('attach');
-      })
+  this.route('logged-in', {path: '/'}, function () {
+    // all logged in routes nested under here
+    this.route('mailbox', {path: "/:mailbox_id", resetNamespace: true}, function() {
+      this.route('email', {path: "/emails/:email_id"}, function() {
+        this.route('edit', function() {
+          this.route('attach');
+        })
+      });
     });
+
   });
+
+  this.route('sign-in');
 });
 
 export default Router;

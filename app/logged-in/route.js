@@ -3,7 +3,7 @@ import Ember from 'ember';
 export default Ember.Route.extend({
   renderTemplate() {
     this._super(...arguments);
-    this.render("mailbox/email/edit/toolbar", {
+    this.render("application/toolbar", {
       into:   'logged-in',
       outlet: 'toolbar'
     });

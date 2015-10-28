@@ -1,0 +1,26 @@
+<div class="container">
+  {{outlet 'toolbar'}}
+
+  <div class="pull-right">
+    <br>
+    {{link-to "Log Out" 'sign-in'}}
+  </div>
+  <h1>
+    {{link-to "TomsterMail" "logged-in"}}
+  </h1>
+
+
+  <ul class="nav nav-pills">
+    {{#active-link}}
+      {{link-to 'Inbox' 'mailbox' 'inbox'}}
+    {{/active-link}}
+    {{#active-link}}
+      {{link-to 'Sent' 'mailbox' 'sent'}}
+    {{/active-link}}
+    {{#active-link}}
+      {{link-to 'Drafts' 'mailbox' 'drafts'}}
+    {{/active-link}}
+  </ul>
+
+  {{outlet}}
+</div>
