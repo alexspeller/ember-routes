@@ -8,7 +8,7 @@
     {{#each model as |email|}}
       {{#active-link tagName='tr'}}
         <td>
-          {{link-to email.subject 'email' email.id}}
+          {{link-to email.subject 'mailbox.email' email.id}}
         </td>
         <td>{{email.from}}</td>
         <td>{{email.to}}</td>
