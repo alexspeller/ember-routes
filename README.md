@@ -1,6 +1,6 @@
 # Tomstermail
 
-Code to accompany my EmberCamp London 2015 Talk
+Code to accompany [my EmberCamp London 2015 Talk](http://alexspeller.com/embercamp-london-talk-routing/)
 
 ## Prerequisites
 
