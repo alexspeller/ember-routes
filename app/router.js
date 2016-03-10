@@ -12,7 +12,7 @@ Router.map(function() {
       this.route('email', {path: "/emails/:email_id"}, function() {
         this.route('edit', function() {
           this.route('attach');
-        })
+        });
       });
     });
 
